@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drag and Drop Puzzle Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header id="headLine">
+        <h1>Drag and Drop!</h1>
+        <p>Solve the puzzle</p>
+    </header>
+
+    <section id="game-boards">
+        <h2>Puzzle Game Board</h2> <!-- Fix: Added heading for structure -->
+
+        <!-- Draggable pieces -->
+        <div class="puzzle-pieces" role="group" aria-label="Puzzle Pieces">
+            <img id="topLeft" draggable="true" src="images/topLeft0.jpg" class="puzzle-image" alt="Top Left Piece">
+            <img id="topRight" draggable="true" src="images/topRight0.jpg" class="puzzle-image" alt="Top Right Piece">
+            <img id="bottomLeft" draggable="true" src="images/bottomLeft0.jpg" class="puzzle-image" alt="Bottom Left Piece">
+            <img id="bottomRight" draggable="true" src="images/bottomRight0.jpg" class="puzzle-image" alt="Bottom Right Piece">
+        </div>
+
+        <!-- Drop Zones -->
+        <div class="puzzle-board" role="region" aria-labelledby="dropZonesTitle">
+            <h3 id="dropZonesTitle" class="sr-only">Drop Zones</h3> <!-- Fix: Hidden heading for accessibility -->
+            <div class="drop-zone tl"></div>
+            <div class="drop-zone tr"></div>
+            <div class="drop-zone bl"></div>
+            <div class="drop-zone br"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Click a thumbnail to change the puzzle background!</p>
+        <nav id="buttonHolder" aria-label="Puzzle Selector"> <!-- Fix: Removed role="navigation" -->
+            <img src="images/buttonZero.jpg" data-bgref="0" alt="Puzzle 1 Thumbnail">
+            <img src="images/buttonOne.jpg" data-bgref="1" alt="Puzzle 2 Thumbnail">
+            <img src="images/buttonTwo.jpg" data-bgref="2" alt="Puzzle 3 Thumbnail">
+            <img src="images/buttonThree.jpg" data-bgref="3" alt="Puzzle 4 Thumbnail">
+        </nav>
+    </footer>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
