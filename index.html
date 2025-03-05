@@ -15,9 +15,8 @@
     </header>
 
     <section id="game-boards">
-        <h2>Puzzle Game Board</h2> <!-- Fix: Added heading for structure -->
+        <h2>Puzzle Game Board</h2> 
 
-        <!-- Draggable pieces -->
         <div class="puzzle-pieces" role="group" aria-label="Puzzle Pieces">
             <img id="topLeft" draggable="true" src="images/topLeft0.jpg" class="puzzle-image" alt="Top Left Piece">
             <img id="topRight" draggable="true" src="images/topRight0.jpg" class="puzzle-image" alt="Top Right Piece">
@@ -25,9 +24,8 @@
             <img id="bottomRight" draggable="true" src="images/bottomRight0.jpg" class="puzzle-image" alt="Bottom Right Piece">
         </div>
 
-        <!-- Drop Zones -->
         <div class="puzzle-board" role="region" aria-labelledby="dropZonesTitle">
-            <h3 id="dropZonesTitle" class="sr-only">Drop Zones</h3> <!-- Fix: Hidden heading for accessibility -->
+            <h3 id="dropZonesTitle" class="sr-only">Drop Zones</h3> 
             <div class="drop-zone tl"></div>
             <div class="drop-zone tr"></div>
             <div class="drop-zone bl"></div>
@@ -37,7 +35,7 @@
 
     <footer>
         <p>Click a thumbnail to change the puzzle background!</p>
-        <nav id="buttonHolder" aria-label="Puzzle Selector"> <!-- Fix: Removed role="navigation" -->
+        <nav id="buttonHolder" aria-label="Puzzle Selector"> 
             <img src="images/buttonZero.jpg" data-bgref="0" alt="Puzzle 1 Thumbnail">
             <img src="images/buttonOne.jpg" data-bgref="1" alt="Puzzle 2 Thumbnail">
             <img src="images/buttonTwo.jpg" data-bgref="2" alt="Puzzle 3 Thumbnail">
@@ -45,6 +43,6 @@
         </nav>
     </footer>
 
-    <script src="js/"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
